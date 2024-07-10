@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Reload AADL</title>
+  <style>
+    body {
+      width: 300px; /* Adjust width as needed */
+      background-color: #ffffff; /* White background */
+      font-family: Arial, sans-serif;
+      color: #333; /* Dark text color */
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333; /* Dark heading color */
+      text-align: center;
+    }
+
+    input {
+      margin-bottom: 10px;
+      width: calc(100% - 20px); /* Adjust width to leave space for padding */
+      padding: 10px;
+      border: 1px solid #ccc; /* Light gray border */
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50; /* Green button background */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    button.stop {
+      background-color: #FF5733; /* Red button background for 'Stop' */
+    }
+
+    button:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }
+
+    #status {
+      display: block;
+      margin-top: 10px;
+      text-align: center;
+      font-size: 12px;
+      color: #888; /* Gray status text */
+    }
+  </style>
+</head>
+<body>
+  <h1>Auto Reload AADL</h1>
+  <input type="text" id="nin" placeholder="Enter NIN Number">
+  <input type="text" id="nss" placeholder="Enter NSS Number">
+  <button id="toggleButton">Start</button>
+  <span id="status">Status: Not Running</span>
+  <script src="popup.js"></script>
+</body>
+</html>
